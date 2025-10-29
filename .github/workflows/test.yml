@@ -12,4 +12,5 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v5
+      - run: cargo --version
       - uses: jdx/mise-action@v3
