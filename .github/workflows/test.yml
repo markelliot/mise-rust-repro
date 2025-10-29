@@ -13,7 +13,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5
       - name: Remove cargo
-        run: |
-          rm -rf ~/.cargo
-          rm -rf ~/.rustup
+        run: cargo --version
       - uses: jdx/mise-action@v3
